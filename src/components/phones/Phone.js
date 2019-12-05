@@ -3,6 +3,7 @@ import { Redirect, withRouter, Link } from 'react-router-dom'
 import axios from 'axios'
 
 import apiUrl from '../../apiConfig'
+import './PhoneStylesheet.scss'
 
 class Phone extends React.Component {
   constructor (props) {
@@ -53,15 +54,19 @@ class Phone extends React.Component {
 
     return (
       <React.Fragment>
-        <ul>
-          <li>Company: {this.state.phone.company}</li>
-          <li>Model: {this.state.phone.model}</li>
-          <li>Description: {this.state.phone.description}</li>
-          <li>Price: {this.state.phone.price}</li>
+        <div className="one-phone">
+          <h1>Phone:</h1>
+          <h4>Company: {this.state.phone.company}</h4>
+          <h4>Model: {this.state.phone.model}</h4>
+          <h4>Description: {this.state.phone.description}</h4>
+          <h4>Price: {this.state.phone.price}</h4>
           <button onClick={this.destroy}>Delete Phone</button>
-          <li><Link to={`/update-phone/${this.state.phone._id}`}> Update a Phone</Link>
-          </li>
-        </ul>
+          <Link to={`/update-phone/${this.state.phone._id}`}>
+            <button>
+              Update a Phone
+            </button>
+          </Link>
+        </div>
       </React.Fragment>
     )
   }

@@ -2,10 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const PhoneForm = ({ model, state, company, description, price, handleSubmit, handleChange, cancelPath }) => (
-  <form onSubmit={handleSubmit}>
+  <form className="input" onSubmit={handleSubmit}>
     <label>Model</label>
     <input
-      placeholder=""
+      placeholder="Model"
       defaultValue={model}
       name="model"
       onChange={handleChange}
@@ -13,7 +13,7 @@ const PhoneForm = ({ model, state, company, description, price, handleSubmit, ha
     />
     <label>State</label>
     <input
-      placeholder=""
+      placeholder="State"
       defaultValue={state}
       name="state"
       onChange={handleChange}
@@ -21,7 +21,7 @@ const PhoneForm = ({ model, state, company, description, price, handleSubmit, ha
 
     <label>Company</label>
     <input
-      placeholder=""
+      placeholder="Company"
       defaultValue={company}
       name="company"
       onChange={handleChange}
@@ -29,7 +29,7 @@ const PhoneForm = ({ model, state, company, description, price, handleSubmit, ha
 
     <label>Description</label>
     <input
-      placeholder=""
+      placeholder="Description"
       defaultValue={description}
       name="description"
       onChange={handleChange}
@@ -37,15 +37,15 @@ const PhoneForm = ({ model, state, company, description, price, handleSubmit, ha
 
     <label>Price</label>
     <input
-      placeholder=""
+      placeholder="Price"
       defaultValue={price}
       name="price"
       onChange={handleChange}
     />
 
-    <button type="submit">Submit</button>
+    <button className="btn" type="submit">Submit</button>
     <Link to={cancelPath}>
-      <button>Cancel</button>
+      <button className="btn">Cancel</button>
     </Link>
   </form>
 )

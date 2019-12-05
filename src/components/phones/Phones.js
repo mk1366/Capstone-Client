@@ -28,18 +28,18 @@ class Phones extends Component {
     console.log(this.state.phones)
 
     const phones = this.state.phones.map(phone => (
-      <li key={phone._id}>
-        <Link to={`/phones/${phone._id}`}>{phone.company}: {phone.model}</Link>
-      </li>
+      <Link to={`/phones/${phone._id}`} key={phone._id}>
+        <button className="phones">{phone.company}: {phone.model}</button>
+      </Link>
     ))
 
     return (
       <Fragment>
-        <h4>phones</h4>
+        <h1>Phones</h1>
         <Link to="/create-phone"> Create a Phone</Link>
-        <ul>
+        <div>
           {phones}
-        </ul>
+        </div>
       </Fragment>
     )
   }

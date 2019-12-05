@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
+import './HeaderStylesheet.scss'
 
 const authenticatedOptions = (
   <Fragment>
@@ -26,8 +27,8 @@ const unauthenticatedOptions = (
 // { alwaysOptions }
 
 const Header = ({ user }) => (
-  <Navbar bg="primary" variant="dark" expand="md">
-    <Navbar.Brand href="#">
+  <Navbar className="nav-bar" variant="dark" expand="md" collapseOnSelect>
+    <Navbar.Brand className="nav-bar" href="#">
       Welcome to Phone Exchange
     </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
