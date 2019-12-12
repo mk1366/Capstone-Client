@@ -58,6 +58,10 @@ This is a single page E-commerce application that allows users to exchange elect
      alt="phone API Entity Relationship Diagram"
      style="float: left; margin-right: 10px;" />
 
+## Future Goals
+
+Eventually, I would like to use Redux state management tool, to allow users to be able to exchange products with multiple users and a payment method to purchase the products. In addition, I will like to add a functionality to be able to upload an image.
+
 
 ## [License](LICENSE)
 
