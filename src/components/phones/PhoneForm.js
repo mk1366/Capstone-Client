@@ -28,12 +28,13 @@ const PhoneForm = ({ model, state, company, description, price, handleSubmit, ha
     />
 
     <label>Description</label>
-    <input
+    <textarea
       placeholder="Description"
       defaultValue={description}
       name="description"
       onChange={handleChange}
-    />
+    >
+    </textarea>
 
     <label>Price</label>
     <input
