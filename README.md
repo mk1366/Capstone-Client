@@ -1,6 +1,11 @@
-Phone: E-commerce React App
+ABOUT THE APP
 
-This is a single page E-commerce application that allows users to exchange electronics products with other users. Once the user registered with an email adress and Password, they will have an access to upload the choice of their electronics products with a listing of the items' name, model, state, description and price. The user can create many resources and be able to see all saved items, update and delete. Users can only mangae thier own products and do not have an access to make a change on others' users products.
+This is a single page E-commerce application that allows users to exchange or purchase products. Once the user registered with an email adress and Password, they will have an access to upload the choice of their products with a listing of the items' model, state, description and price. The user can create many resources and be able to see all saved items, update and delete. Users can only mangae thier own products and do not have an access to make a change on others' users products.
+
+## DEVELOPMENT PROCESS
+
+The idea of this app to give an access to the user to be able to exchange or purchase products. I started the project with creating wireframe of the front end and user stories to be able use the app. As a developer I wanted the users to have the access to create, read, update and delete their items. After the CRUD action completed, I created a form in the front end to render the action in the app. Finally, I have worked on the layout of the app to make it more user friendly.
+
 
 ## Link
 - [Live site](https://mk1366.github.io/Capstone-Client/#/)
@@ -60,7 +65,7 @@ This is a single page E-commerce application that allows users to exchange elect
 
 ## Future Goals
 
-Eventually, I would like to use Redux state management tool, to allow users to be able to exchange products with multiple users and a payment method to purchase the products. In addition, I will like to add a functionality to be able to upload an image.
+Eventually, I would like to use Redux state management tool, to move data and UI states to Redux store from React components. Implement different actions like fetching product from API, adding items to cart, removing from cart with Redux. In addition, I will like to add a functionality to be able to upload an image.
 
 
 ## [License](LICENSE)
