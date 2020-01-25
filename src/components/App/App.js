@@ -13,6 +13,7 @@ import Phone from '../phones/Phone'
 import Phones from '../phones/Phones'
 import PhoneCreate from '../phones/PhoneCreate'
 import PhoneUpdate from '../phones/PhoneUpdate'
+import ImageUploader from '../phones/ImageUploader'
 
 class App extends Component {
   constructor () {
@@ -70,6 +71,9 @@ class App extends Component {
           )} />
           <AuthenticatedRoute user={user} path='/update-phone/:id' render={() => (
             <PhoneUpdate alert={this.alert} user={user} />
+          )} />
+          <AuthenticatedRoute user={user} path='/upload-image/:id' render={() => (
+            <ImageUploader alert={this.alert} user={user} />
           )} />
         </main>
       </Fragment>

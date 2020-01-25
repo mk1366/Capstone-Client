@@ -53,7 +53,9 @@ class Phone extends React.Component {
     }
 
     return (
-      <React.Fragment>
+      <div style={{
+        display: 'flex'
+      }}>
         <div className="one-phone">
           <h1>Phone:</h1>
           <h4>Company: {this.state.phone.company}</h4>
@@ -66,8 +68,15 @@ class Phone extends React.Component {
               Update a Phone
             </button>
           </Link>
+          <Link phone={this.state.phone._id}to={`/upload-image/${this.state.phone._id}`}>
+            <button> Upload Image </button>
+          </Link>
         </div>
-      </React.Fragment>
+        <div style={{ float: 'right' }}>
+          <img src= {this.state.phone.image} />
+        </div>
+
+      </div>
     )
   }
 }

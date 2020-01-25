@@ -28,9 +28,12 @@ class Phones extends Component {
     console.log(this.state.phones)
 
     const phones = this.state.phones.map(phone => (
-      <Link to={`/phones/${phone._id}`} key={phone._id}>
-        <button className="phones">{phone.company}: {phone.model}</button>
-      </Link>
+      <div key={phone._id}>
+        <Link to={`/phones/${phone._id}`} key={phone._id}>
+          <button className="phones">{phone.company}: {phone.model}</button>
+        </Link>
+        <img style={{ width: '50px' }} src={phone.image} />
+      </div>
     ))
 
     return (
